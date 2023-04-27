@@ -26,6 +26,10 @@
         @if $day-number >= 28 and $day-number <=31 {
           display: none;
         }
+
+        background-image: url("https://cataas.com/cat?type=sq#{$day-number}");
+        background-size: cover;
+        color: white;
       }
 
       &:nth-child(#{$day-number})::after {
